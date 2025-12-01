@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'screens/login_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    // Firebase đã được khởi tạo rồi, bỏ qua lỗi
+    debugPrint('Firebase initialization: $e');
+  }
+  runApp(const LedMqttApp());
+}
+
+class LedMqttApp extends StatelessWidget {
+  const LedMqttApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Điều Khiển LED RGB',
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primarySwatch: Colors.indigo,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const LoginScreen(),
+    );
+  }
+}

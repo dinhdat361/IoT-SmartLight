@@ -1,0 +1,25 @@
+name: flutter_led_mqtt
+description: A simple Flutter app to control an ESP32 LED via MQTT (HiveMQ public broker).
+publish_to: "none" # Prevent publishing to pub.dev
+version: 1.0.0+1
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mqtt_client: ^10.11.1
+
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  cloud_firestore: ^4.15.8
+  firebase_database: ^10.3.11
+  firebase_storage: ^11.6.10
+  flutter_colorpicker: ^1.0.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

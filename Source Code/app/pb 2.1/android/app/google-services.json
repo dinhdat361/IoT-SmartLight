@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627239957572",
+    "firebase_url": "https://smart-home-v2-3199a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smart-home-v2-3199a",
+    "storage_bucket": "smart-home-v2-3199a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627239957572:android:4a34b99dd70e05365f3811",
+        "android_client_info": {
+          "package_name": "com.example.flutter_led_mqtt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627239957572-r3e2gc5cibinkae6a7bc3vgdk1affrpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGBHG738hSNbLgYxUu7QrS69YnRa9XxlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627239957572-r3e2gc5cibinkae6a7bc3vgdk1affrpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
